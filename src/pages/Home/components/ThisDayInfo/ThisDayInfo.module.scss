@@ -11,5 +11,45 @@
 }
 
 .item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  .indicator,
+  .indicator__name {
+    margin-right: 20px;
+  }
 
+  .indicator {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 50%;
+  }
+
+  .indicator__name,
+  .indicator__value{
+    font-size: 14px;
+  }
+
+  .indicator__name {
+    color: $base-color;
+  }
+
+  .indicator__value {
+    color: $lite-color;
+  }
+}
+
+.cloud__image {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
